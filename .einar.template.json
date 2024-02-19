@@ -1,0 +1,38 @@
+{
+    "installations_base": [
+        {
+            "name":"godotenv",
+            "library": "github.com/joho/godotenv"
+        },
+        {
+            "name":"einar-ioc",
+            "library": "github.com/Ignaciojeria/einar-ioc@v1.7.0"
+        },
+        {
+            "name":"echo",
+            "library": "github.com/labstack/echo/v4"
+        }
+    ],
+    "base_template": {
+        "folders": [
+             {
+                 "source_dir": "app/configuration",
+                 "destination_dir": "app/configuration"
+             },
+             {
+                 "source_dir": "app/server",
+                 "destination_dir": "app/server"
+             }
+         ],
+         "files": [
+             {
+                 "source_file": "main.go",
+                 "destination_file": "main.go"
+             },
+             {
+                 "source_file": ".env",
+                 "destination_file": ".env"
+             }
+         ]
+     }
+}
